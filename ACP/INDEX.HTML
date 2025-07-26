@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page with Media, Form & Table</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>My Content Page</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">Gallery</a> |
+            <a href="#">Register</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Article with Image -->
+        <article>
+            <h2>Beautiful Nature</h2>
+            <img src="neom-tuEtpjghVmg-unsplash.jpg" alt="Nature Image" width="400">
+            <p>This image represents the beauty of nature.</p>
+        </article>
+
+        <!-- Section with Audio -->
+        <section>
+            <h2>Listen to Music</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Section with Video -->
+        <section>
+            <h2>Watch Video</h2>
+            <video width="400" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Registration Form with Dropdown & More Details -->
+        <section>
+            <h2>Registration Form</h2>
+            <form>
+                <!-- Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Dropdown -->
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select --</option>
+                    <option value="web">Web Development</option>
+                    <option value="app">App Development</option>
+                    <option value="ai">Artificial Intelligence</option>
+                </select><br><br>
+
+                <!-- More Details -->
+                <label for="details">More Details:</label><br>
+                <textarea id="details" name="details" rows="4" cols="40" placeholder="Enter additional details..."></textarea><br><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>Registered Students</h2>
+            <table br="1" cellpadding="8">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Asifa Tahniyat</td>
+                    <td>asifa@example.com</td>
+                    <td>Web Development</td>
+                    <td>Interested in React</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>AI</td>
+                    <td>Focus on Machine Learning</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Content Page</p>
+    </footer>
+</body>
+</html>
